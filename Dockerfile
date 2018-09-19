@@ -1,3 +1,3 @@
-FROM registry.neunn.com/neunn/tomta8.5
+FROM docker.io/tomcat:8
 RUN rm -rf /usr/local/tomcat/webapps/*
-COPY web/ /usr/local/tomcat/webapps/ROOT/
+COPY target/alternate-test.war /usr/local/tomcat/webapps/ROOT.war
